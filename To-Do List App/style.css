@@ -1,0 +1,82 @@
+body {
+  background: #0f0f0f;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #151515;
+  box-shadow: 0 0 20px #0ff;
+  animation: pulse 2s infinite alternate;
+
+}
+
+@keyframes pulse {
+  from { box-shadow: 0 0 20px #0ff; }
+  to { box-shadow: 0 0 40px #0ff; }
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #0ff;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px;
+  background: #0ff;
+  color: #111;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #0cc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #1a1a1a;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 4px solid #0ff;
+  transition: 0.4s ease;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  border-color: #444;
+}
+h2{
+    text-align: center;
+    color: #0ff;
+    margin-bottom: 20px;
+   
+}
